@@ -1,0 +1,9 @@
+res://level_1.tscn
+res://Resources/level_1-environment.tres
+res://Resources/world-blocks-v1.tres
+res://hud.tscn
+res://collin.tscn
+res://trunk.tscn
+res://coin.tscn
+res://bench.tscn
+res://main_screen.tscn

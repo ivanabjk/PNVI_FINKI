@@ -1,0 +1,43 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1741253122
+_world_blocks_v_1.tscn::PackedScene::1940027812262443909::1739756363::0::1::::<><>::uid://d3ofwaodyeau8::::res://Assets/Models/ world-blocks-v1.glb
+bench.tscn::PackedScene::5010360143498721502::1740519436::0::1::::<><>::uid://daw637ftsq6me::::res://Assets/Models/bench.res
+button.gd::GDScript::-1::1739986256::0::1::::<>RefCounted<>::
+camera_follow.gd::GDScript::-1::1739992513::0::1::::<>Camera3D<>::
+coin.gd::GDScript::-1::1739993706::0::1::::<>Area3D<>::
+coin.tscn::PackedScene::7504843197319110247::1740519436::0::1::::<><>::res://coin.gd<>uid://dsf138nlea8j6::::res://Assets/Models/coin_save.res
+collin.gd::GDScript::-1::1740002514::0::1::::<>CharacterBody3D<>::
+collin.tscn::PackedScene::3096265962512261766::1740519436::0::1::::<><>::res://collin.gd<>uid://biyjhcf21pfse::::res://Assets/Models/game-robot-001_robot_mix_decals.png
+global.gd::GDScript::-1::1740519627::0::1::::<>Node<>::
+hud.gd::GDScript::-1::1739978057::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::3314579911242433341::1740519436::0::1::::<><>::res://hud.gd<>uid://cxfcjlvgkyam2::::res://Assets/Images/hud_coin.png<>uid://deo8ml1xidobx::::res://Assets/Fonts/FrancoisOne-Regular.ttf
+icon.gd::GDScript::-1::1739057129::0::1::::<>Sprite3D<>::
+icon.svg::CompressedTexture2D::5074791328717549799::1738602101::1738884053::1::::<><>::
+level_1.gd::GDScript::-1::1740519619::0::1::::<>Node3D<>::
+level_1.tscn::PackedScene::3744558200576559032::1740519627::0::1::::<><>::res://level_1.gd<>uid://bkd4bvr4rd4te::::res://collin.tscn<>uid://c5mlxdfjsm5t7::::res://Resources/level_1-environment.tres<>uid://bri05qe43q26j::::res://Resources/world-blocks-v1.tres<>uid://de6nw2wsep0h4::::res://coin.tscn<>uid://bnhuv81wktbq8::::res://hud.tscn<>uid://dly4amwtbsff6::::res://Assets/Models/bigGreenTree.glb<>uid://d3gd4fs6m5je1::::res://Assets/Models/tree.glb<>uid://cdnb5t4ssv4mk::::res://bench.tscn<>uid://ds0cib6r4bs64::::res://Assets/Models/wood_trunk.glb<>uid://dmhw6mkc203nk::::res://trunk.tscn
+main_screen.gd::GDScript::-1::1739989897::0::1::::<>Node2D<>::
+main_screen.tscn::PackedScene::4426328610400225674::1740519437::0::1::::<><>::uid://deo8ml1xidobx::::res://Assets/Fonts/FrancoisOne-Regular.ttf<>res://main_screen.gd<>uid://c1yj4wxwkl2p2::::res://Assets/Images/level1_pic.jpg
+trunk.tscn::PackedScene::8017370598322237420::1740519436::0::1::::<><>::uid://bwvfnq2ektn5j::::res://Assets/Models/trunk.res
+::res://Assets/::1739834039
+::res://Assets/Fonts/::1739834055
+FrancoisOne-Regular.ttf::FontFile::7470944423454027625::1739834022::1739834055::1::::<><>::
+::res://Assets/Images/::1739989704
+hud_coin.png::CompressedTexture2D::6397644776446586771::1739833353::1739833468::1::::<><>::
+level1_pic.jpg::CompressedTexture2D::6647895801088230397::1739989542::1739989704::1::::<><>::
+::res://Assets/Models/::1740519364
+ world-blocks-v1.glb::PackedScene::9153793855726584905::1739406271::1741253123::1::::<><>::uid://b3f3uj4vg5h5h::::res://Assets/Models/ world-blocks-v1_Grass001_1K-JPG_Roughness.png<>uid://tst7ii5uh0e8::::res://Assets/Models/ world-blocks-v1_Grass001_1K-JPG_NormalGL.jpg
+ world-blocks-v1_Grass001_1K-JPG_NormalGL.jpg::CompressedTexture2D::1371958030898540869::1739406453::1741253123::1::::<><>::
+ world-blocks-v1_Grass001_1K-JPG_Roughness.png::CompressedTexture2D::4363766504476695119::1739406453::1741253123::1::::<><>::
+bench.res::ArrayMesh::7206612280032934616::1739929328::0::1::::<><>::
+bigGreenTree.glb::PackedScene::7982645855116543197::1739410899::1739929328::1::::<><>::
+coin_new.glb::PackedScene::3545830283338577713::1739103843::1739406455::1::::<><>::uid://dsf138nlea8j6::::res://Assets/Models/coin_save.res
+coin_save.res::ArrayMesh::8434613523233635765::1739406455::0::1::::<><>::
+game-robot-001.glb::PackedScene::218348980324775965::1739843945::1739843953::1::::<><>::uid://biyjhcf21pfse::::res://Assets/Models/game-robot-001_robot_mix_decals.png
+game-robot-001_robot_mix_decals.png::CompressedTexture2D::2998035566419846708::1739843953::1739843954::1::::<><>::
+garden-bench.glb::PackedScene::3228603180827387853::1739927062::1739929328::1::::<><>::uid://daw637ftsq6me::::res://Assets/Models/bench.res
+tree.glb::PackedScene::9137170170319064022::1739410685::1739410925::1::::<><>::
+trunk.res::ArrayMesh::3974254859128854193::1739847135::0::1::::<><>::
+wood_trunk.glb::PackedScene::8474406501975656763::1739846934::1739847135::1::::<><>::uid://bwvfnq2ektn5j::::res://Assets/Models/trunk.res
+::res://Resources/::1740519380
+level_1-environment.tres::Environment::6903988335483687038::1740519380::0::1::::<><>::
+world-blocks-v1.tres::MeshLibrary::3597718394116964083::1740519380::0::1::::<><>::uid://b3f3uj4vg5h5h::::res://Assets/Models/ world-blocks-v1_Grass001_1K-JPG_Roughness.png<>uid://tst7ii5uh0e8::::res://Assets/Models/ world-blocks-v1_Grass001_1K-JPG_NormalGL.jpg

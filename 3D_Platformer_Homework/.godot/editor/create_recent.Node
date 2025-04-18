@@ -1,0 +1,14 @@
+Node3D
+TextureRect
+SubViewport
+SubViewportContainer
+Button
+Label
+Panel
+Timer
+CollisionShape3D
+MeshInstance3D
+RigidBody3D
+CanvasLayer
+AnimationPlayer
+Area3D
