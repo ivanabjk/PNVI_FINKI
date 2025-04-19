@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://de6nw2wsep0h4"]
+
+[ext_resource type="Script" path="res://coin.gd" id="1_l2ses"]
+[ext_resource type="ArrayMesh" uid="uid://dsf138nlea8j6" path="res://Assets/Models/coin_save.res" id="2_m4r08"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dah5q"]
+height = 0.15
+radius = 0.3
+
+[sub_resource type="Animation" id="Animation_elvod"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_yorxv"]
+resource_name = "bounce"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1, 0), Vector3(0, 0.8, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v3aqa"]
+_data = {
+"RESET": SubResource("Animation_elvod"),
+"bounce": SubResource("Animation_yorxv")
+}
+
+[node name="Coin" type="Area3D"]
+collision_layer = 4
+script = ExtResource("1_l2ses")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00475889, -0.380877, -1.48253e-12, -0.0069042, 0.000139106, -0.295295, 0.299857, -0.00604153, -0.00679916, 0, 0, 0)
+mesh = ExtResource("2_m4r08")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.0182726, -0.999833, 0, 0.999833, -0.0182726, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_dah5q")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v3aqa")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

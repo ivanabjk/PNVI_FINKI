@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4ce8ri276llq"]
+
+[ext_resource type="FontFile" uid="uid://deo8ml1xidobx" path="res://Assets/Fonts/FrancoisOne-Regular.ttf" id="1_5xtu5"]
+[ext_resource type="Script" path="res://main_screen.gd" id="1_fixks"]
+[ext_resource type="Texture2D" uid="uid://c1yj4wxwkl2p2" path="res://Assets/Images/level1_pic.jpg" id="2_s3hct"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgi16"]
+bg_color = Color(0.147672, 0.147672, 0.147672, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="MainScreen" type="Node2D"]
+position = Vector2(2, 1)
+scale = Vector2(1.67267, 1.67265)
+script = ExtResource("1_fixks")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.994771, 1.00261)
+texture = ExtResource("2_s3hct")
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+offset_left = 174.915
+offset_top = 119.688
+offset_right = 972.915
+offset_bottom = 244.688
+theme_override_styles/panel = SubResource("StyleBoxFlat_lgi16")
+
+[node name="message_label" type="Label" parent="TextureRect/Panel"]
+offset_left = 38.0
+offset_top = 21.0
+offset_right = 765.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("1_5xtu5")
+theme_override_font_sizes/font_size = 60
+text = "Let's Play!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="action_button" type="Button" parent="TextureRect"]
+offset_left = 464.428
+offset_top = 328.143
+offset_right = 685.428
+offset_bottom = 478.143
+theme_override_fonts/font = ExtResource("1_5xtu5")
+theme_override_font_sizes/font_size = 80
+text = "Start"

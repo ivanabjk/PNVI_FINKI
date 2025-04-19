@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnhuv81wktbq8"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_1662p"]
+[ext_resource type="Texture2D" uid="uid://cxfcjlvgkyam2" path="res://Assets/Images/hud_coin.png" id="1_hrw02"]
+[ext_resource type="FontFile" uid="uid://deo8ml1xidobx" path="res://Assets/Fonts/FrancoisOne-Regular.ttf" id="2_yv3us"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27b3f"]
+bg_color = Color(0, 0, 0, 0.380392)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_1662p")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 25.0
+offset_top = 21.0
+offset_right = 215.0
+offset_bottom = 82.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_27b3f")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 25.0
+offset_top = 112.0
+offset_right = 197.0
+offset_bottom = 173.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_27b3f")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 318.0
+offset_top = 23.0
+offset_right = 978.0
+offset_bottom = 84.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_27b3f")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 32.0
+offset_top = 26.0
+offset_right = 81.0
+offset_bottom = 75.0
+texture = ExtResource("1_hrw02")
+expand_mode = 1
+
+[node name="Label_x" type="Label" parent="."]
+offset_left = 88.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 67.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 24
+text = "x"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 152.0
+offset_top = 26.0
+offset_right = 167.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "/"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 53.0
+offset_top = 118.0
+offset_right = 120.0
+offset_bottom = 170.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "00 : "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 343.0
+offset_top = 28.0
+offset_right = 358.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "Collect all coins until the timer runs out!"
+
+[node name="lTimer" type="Label" parent="."]
+offset_left = 126.0
+offset_top = 118.0
+offset_right = 197.0
+offset_bottom = 170.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "00
+"
+
+[node name="lCollected" type="Label" parent="."]
+offset_left = 109.0
+offset_top = 26.0
+offset_right = 144.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "0
+"
+
+[node name="lTotal" type="Label" parent="."]
+offset_left = 171.0
+offset_top = 26.0
+offset_right = 203.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_yv3us")
+theme_override_font_sizes/font_size = 36
+text = "0
+"
