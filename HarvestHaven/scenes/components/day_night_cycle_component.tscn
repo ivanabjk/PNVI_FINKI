@@ -11,4 +11,5 @@ gradient = SubResource("Gradient_k5l56")
 
 [node name="DayNightCycleComponent" type="CanvasModulate"]
 script = ExtResource("1_xew00")
+initial_minute = 0
 day_night_gradient_texture = SubResource("GradientTexture1D_jw0r2")
