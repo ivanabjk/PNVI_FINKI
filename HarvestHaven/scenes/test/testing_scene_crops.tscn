@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d4kbcji3qn8tu" path="res://scenes/objects/plants/corn.tscn" id="5_lqww5"]
 [ext_resource type="PackedScene" uid="uid://b7qi8i7dqv7ui" path="res://scenes/objects/plants/tomato.tscn" id="6_df7p2"]
 
-[node name="TestingSceneDayAndNightCycle" type="Node2D"]
+[node name="TestingSceneCrops" type="Node2D"]
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_4pnpg")]
 visible = false
