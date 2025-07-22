@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=4 uid="uid://c5wla5nrrhrfh"]
+[gd_scene load_steps=15 format=4 uid="uid://c5wla5nrrhrfh"]
 
+[ext_resource type="PackedScene" uid="uid://dqqxeyqvhh0a1" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="1_36jsr"]
 [ext_resource type="PackedScene" uid="uid://c3aew8xsxd5ek" path="res://scenes/components/day_night_cycle_component.tscn" id="1_cgni6"]
 [ext_resource type="TileSet" uid="uid://d0m8rp7tug6re" path="res://tilesets/game_tile_set.tres" id="2_7mdlf"]
 [ext_resource type="PackedScene" uid="uid://1rw27h0klu0v" path="res://scenes/characters/player/player.tscn" id="3_qfwfq"]
@@ -15,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://wfs3ch1o0y5b" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="11_06q7r"]
 
 [node name="TestingSceneCropFieldsTilledDirt" type="Node2D"]
+
+[node name="TestSceneEnableToolButtonsComponent" parent="." instance=ExtResource("1_36jsr")]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("9_fssgs")]
 script = ExtResource("10_btmag")
