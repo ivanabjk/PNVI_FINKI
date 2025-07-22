@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://c5wla5nrrhrfh"]
+[gd_scene load_steps=14 format=4 uid="uid://c5wla5nrrhrfh"]
 
 [ext_resource type="PackedScene" uid="uid://c3aew8xsxd5ek" path="res://scenes/components/day_night_cycle_component.tscn" id="1_cgni6"]
 [ext_resource type="TileSet" uid="uid://d0m8rp7tug6re" path="res://tilesets/game_tile_set.tres" id="2_7mdlf"]
@@ -8,8 +8,18 @@
 [ext_resource type="PackedScene" uid="uid://cpiugp5udl4n4" path="res://scenes/ui/game_screen.tscn" id="4_0kw4g"]
 [ext_resource type="PackedScene" uid="uid://byrga45j3ip8o" path="res://scenes/components/crops_cursor_component.tscn" id="5_hi68j"]
 [ext_resource type="Script" path="res://scenes/components/crops_cursor_component.gd" id="6_dqbe0"]
+[ext_resource type="PackedScene" uid="uid://cgm40kwlhik2h" path="res://scenes/components/save_data_component.tscn" id="6_qotnh"]
+[ext_resource type="Resource" uid="uid://y4jusnt7xcyu" path="res://resources/tilemap_layer_data_resource.tres" id="7_i06fv"]
+[ext_resource type="PackedScene" uid="uid://lynpurbbwp7w" path="res://scenes/components/save_level_data_component.tscn" id="9_fssgs"]
+[ext_resource type="Script" path="res://scenes/components/save_level_data_component.gd" id="10_btmag"]
+[ext_resource type="PackedScene" uid="uid://wfs3ch1o0y5b" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="11_06q7r"]
 
 [node name="TestingSceneCropFieldsTilledDirt" type="Node2D"]
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("9_fssgs")]
+script = ExtResource("10_btmag")
+
+[node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("11_06q7r")]
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_cgni6")]
 visible = false
@@ -26,6 +36,9 @@ tile_set = ExtResource("2_7mdlf")
 
 [node name="TilledSoil" type="TileMapLayer" parent="GameTileMap"]
 tile_set = ExtResource("2_7mdlf")
+
+[node name="SaveDataComponent" parent="GameTileMap/TilledSoil" instance=ExtResource("6_qotnh")]
+save_data_resource = ExtResource("7_i06fv")
 
 [node name="CropFields" type="Node2D" parent="."]
 
