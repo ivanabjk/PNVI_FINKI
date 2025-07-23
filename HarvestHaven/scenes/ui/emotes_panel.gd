@@ -10,7 +10,7 @@ func _ready() -> void:
 	animated_sprite_2d.play("emote_1_idle")
 	
 	InventoryManager.inventory_changed.connect(on_inventory_changed)
-	#GameDialogueManager.feed_the_animals.connect(on_feed_the_animals)
+	GameDialogueManager.feed_the_animals.connect(on_feed_the_animals)
 
 
 func play_emote(animation: String) -> void:
