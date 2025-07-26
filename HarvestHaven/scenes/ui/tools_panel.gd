@@ -6,6 +6,9 @@ extends PanelContainer
 @onready var tool_corn: Button = $MarginContainer/HBoxContainer/ToolCorn
 @onready var tool_tomato: Button = $MarginContainer/HBoxContainer/ToolTomato
 
+
+var is_ui_clicked = false
+
 func _ready() -> void:
 	ToolManager.enable_tool.connect(on_enable_tool_button)
 	
@@ -20,6 +23,10 @@ func _ready() -> void:
 	
 	tool_tomato.disabled = true
 	tool_tomato.focus_mode = Control.FOCUS_NONE
+	
+	for button in [tool_axe, tool_tilling, tool_watering_can, tool_corn, tool_tomato]:
+		button.gui_input.connect(_on_button_gui_input)
+	
 
 
 func _on_tool_axe_pressed() -> void:
@@ -60,3 +67,12 @@ func on_enable_tool_button(tool: DataTypes.Tools) -> void:
 	elif tool == DataTypes.Tools.PlantTomato:
 		tool_tomato.disabled = false
 		tool_tomato.focus_mode = Control.FOCUS_ALL
+		
+func _on_button_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.pressed:
+				is_ui_clicked = true
+			else:
+				is_ui_clicked = false
+		

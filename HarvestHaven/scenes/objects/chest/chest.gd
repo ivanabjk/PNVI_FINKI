@@ -68,6 +68,10 @@ func trigger_feed_harvest(inventory_item: String, scene: Resource) -> void:
 	for index in inventory_item_count:
 		var harvest_instance = scene.instantiate() as Node2D
 		harvest_instance.global_position = Vector2(global_position.x, global_position.y - food_drop_height)
+		
+		var area := harvest_instance.get_node("CollectableComponent") as Area2D
+		area.monitoring = false
+		
 		get_tree().root.add_child(harvest_instance)
 		var target_position = global_position
 		

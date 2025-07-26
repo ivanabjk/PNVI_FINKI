@@ -38,6 +38,14 @@ func get_cell_under_mouse() -> void:
 
 func add_crop() -> void:
 	if distance < 20.0 && cell_source_id != -1:
+		
+		var crop_fields = get_parent().find_child("CropFields")
+		var crop_nodes = crop_fields.get_children()
+		
+		for node: Node2D in crop_nodes:
+			if node.global_position == local_cell_position:
+				return # A crop already exists here
+		
 		if ToolManager.selected_tool == DataTypes.Tools.PlantCorn:
 			var corn_instance = corn_plant_scene.instantiate() as Node2D
 			corn_instance.global_position = local_cell_position

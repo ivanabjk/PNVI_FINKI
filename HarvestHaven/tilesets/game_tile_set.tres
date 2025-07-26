@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bd2dbtrypsbdb" path="res://scenes/houses/large_house.tscn" id="5_0kw0t"]
 [ext_resource type="PackedScene" uid="uid://no8j7kcpqspx" path="res://scenes/objects/trees/small_tree.tscn" id="6_7ufi7"]
 [ext_resource type="PackedScene" uid="uid://c8sgfo1drp0gh" path="res://scenes/houses/medium_house.tscn" id="7_lawxn"]
-[ext_resource type="PackedScene" uid="uid://cejci003287o8" path="res://scenes/houses/small_house.tscn" id="8_5ma5p"]
+[ext_resource type="PackedScene" uid="uid://cqye82e7bc7ww" path="res://scenes/houses/small_house.tscn" id="8_5ma5p"]
 [ext_resource type="PackedScene" uid="uid://ct8q77aaw70cy" path="res://scenes/objects/trees/large_tree.tscn" id="9_022lm"]
 [ext_resource type="PackedScene" uid="uid://cnyacon1u1ttw" path="res://scenes/objects/rocks/rock.tscn" id="10_12gfr"]
 [ext_resource type="Texture2D" uid="uid://cjc1x7jt21rlm" path="res://assets/game/tilesets/fences.png" id="11_d00lx"]
@@ -487,7 +487,9 @@ texture = ExtResource("4_pjw5n")
 7:4/0 = 0
 8:4/0 = 0
 0:3/0 = 0
+0:3/0/y_sort_origin = 1
 1:3/0 = 0
+1:3/0/y_sort_origin = 1
 8:2/size_in_atlas = Vector2i(1, 2)
 8:2/0 = 0
 8:2/0/y_sort_origin = 8

@@ -8,6 +8,8 @@ var corn_harvest_scene = preload("res://scenes/objects/plants/corn_harvest.tscn"
 @onready var growth_cycle_component: GrowthCycleComponent = $GrowthCycleComponent
 @onready var hurt_component: HurtComponent = $HurtComponent
 
+@export var cell: Vector2i
+
 var growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Seed
 
 func _ready() -> void:
