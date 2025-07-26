@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cpiugp5udl4n4" path="res://scenes/ui/game_screen.tscn" id="2_m22tk"]
 [ext_resource type="PackedScene" uid="uid://1rw27h0klu0v" path="res://scenes/characters/player/player.tscn" id="3_oyqjh"]
 [ext_resource type="PackedScene" uid="uid://gbxllx558mxa" path="res://scenes/characters/guide/guide.tscn" id="3_wsaqb"]
-[ext_resource type="PackedScene" uid="uid://b3ejxjdd5gxie" path="res://scenes/levels/LevelMain.tscn" id="4_1mkio"]
+[ext_resource type="PackedScene" uid="uid://b3ejxjdd5gxie" path="res://scenes/levels/level_1.tscn" id="4_1mkio"]
 
 [node name="MainScene" type="Node"]
 
@@ -24,7 +24,7 @@ position = Vector2(136, 310)
 [node name="LevelRoot" type="Node2D" parent="GameRoot"]
 y_sort_enabled = true
 
-[node name="LevelMain" parent="GameRoot/LevelRoot" instance=ExtResource("4_1mkio")]
+[node name="Level1" parent="GameRoot/LevelRoot" instance=ExtResource("4_1mkio")]
 position = Vector2(0, 0)
 
 [node name="GameScreen" parent="." instance=ExtResource("2_m22tk")]
