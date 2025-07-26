@@ -25,6 +25,5 @@ position = Vector2(136, 310)
 y_sort_enabled = true
 
 [node name="Level1" parent="GameRoot/LevelRoot" instance=ExtResource("4_1mkio")]
-position = Vector2(0, 0)
 
 [node name="GameScreen" parent="." instance=ExtResource("2_m22tk")]
