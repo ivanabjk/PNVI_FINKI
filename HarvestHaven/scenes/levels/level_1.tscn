@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=4 uid="uid://b3ejxjdd5gxie"]
+[gd_scene load_steps=21 format=4 uid="uid://b3ejxjdd5gxie"]
 
 [ext_resource type="TileSet" uid="uid://dnfqfk8hwsd4t" path="res://tilesets/water_tileset.tres" id="1_ebchr"]
+[ext_resource type="PackedScene" uid="uid://15fgl5vc3yge" path="res://audio/music/on_the_farm_music.tscn" id="1_gdnew"]
 [ext_resource type="TileSet" uid="uid://d0m8rp7tug6re" path="res://tilesets/game_tile_set.tres" id="1_ieotx"]
 [ext_resource type="PackedScene" uid="uid://lynpurbbwp7w" path="res://scenes/components/save_level_data_component.tscn" id="1_rg18t"]
 [ext_resource type="Script" path="res://scenes/components/save_level_data_component.gd" id="2_4kxao"]
@@ -32,6 +33,8 @@ source_geometry_mode = 2
 
 [node name="Level1" type="Node2D"]
 y_sort_enabled = true
+
+[node name="OnTheFarmMusic" parent="." instance=ExtResource("1_gdnew")]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_rg18t")]
 script = ExtResource("2_4kxao")
