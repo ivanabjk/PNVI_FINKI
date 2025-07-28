@@ -1,8 +1,9 @@
-[gd_scene load_steps=54 format=3 uid="uid://1rw27h0klu0v"]
+[gd_scene load_steps=55 format=3 uid="uid://1rw27h0klu0v"]
 
 [ext_resource type="Script" path="res://scenes/characters/player/player.gd" id="1_0lnbt"]
 [ext_resource type="Texture2D" uid="uid://bx11uwdyed4j1" path="res://assets/game/characters/character_sprites.png" id="1_joc8n"]
 [ext_resource type="Texture2D" uid="uid://b57p86igftgtu" path="res://assets/game/characters/basic_character_sprites.png" id="2_fsoja"]
+[ext_resource type="Script" path="res://scenes/characters/player/debug_range.gd" id="2_vt75j"]
 [ext_resource type="Script" path="res://scripts/state_machine/node_state_machine.gd" id="3_ishh8"]
 [ext_resource type="Script" path="res://scenes/characters/player/idle_state.gd" id="4_gqi6g"]
 [ext_resource type="Script" path="res://scenes/characters/player/walk_state.gd" id="5_y4cjd"]
@@ -405,6 +406,11 @@ y_sort_enabled = true
 collision_layer = 2
 collision_mask = 257
 script = ExtResource("1_0lnbt")
+
+[node name="DebugRange" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_vt75j")
+color = Color(1, 0.74001, 0.857027, 0.3)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -3)

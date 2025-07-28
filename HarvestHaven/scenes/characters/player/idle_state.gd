@@ -24,6 +24,12 @@ func _on_next_transitions() -> void:
 	
 	if GameInputEvents.is_movement_input():
 		transition.emit("Walk")
+
+	var mouse_pos = player.get_global_mouse_position()
+	var max_range = 48
+	
+	if player.global_position.distance_to(mouse_pos) > max_range:
+		return
 	
 	if player.current_tool == DataTypes.Tools.AxeWood && GameInputEvents.use_tool():
 		transition.emit("Chopping")
